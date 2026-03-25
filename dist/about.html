@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABOUT</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="layout">
+
+  <nav class="navbar">
+  <h2>MyMech</h2>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <ul id="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<script>
+function toggleMenu() {
+  const nav = document.getElementById("nav-links");
+  nav.classList.toggle("active");
+}
+</script>
+
+  <main class="content">
+    
+<section class="about">
+  <h1>About MyMech</h1>
+  <p>
+    MyMech is dedicated to providing top-quality bike repair services.
+    Our experienced mechanics ensure every bike runs smoothly and safely.
+  </p>
+
+  <div class="cards">
+    <div class="card">5+ Years Experience</div>
+    <div class="card">1000+ Happy Clients</div>
+    <div class="card">Affordable Pricing</div>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+  <p>© 2026 MyMech | Bike Services</p>
+</footer>
+
+</body>
+</html>

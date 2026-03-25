@@ -1,0 +1,54 @@
+{% extends "base.njk" %}
+
+{% block content %}
+<section class="hero">
+  <h1>Welcome to MyMech</h1>
+  <p>Your trusted bike repair partner</p>
+</section>
+
+<section class="services">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card">Engine Repair</div>
+    <div class="card">Oil Change</div>
+    <div class="card">Full Service</div>
+  </div>
+</section>
+<section class="services">
+  <h2>Our Clients</h2>
+  <div class="cards">
+    <div class="card">Client A</div>
+    <div class="card">Client B</div>
+    <div class="card">Client C</div>
+  </div>
+</section>
+
+<section class="services">
+  <h2>Feedback</h2>
+  <div class="cards">
+    <div class="card">"Great service!"</div>
+    <div class="card">"Quick and reliable."</div>
+    <div class="card">"Highly recommended."</div>
+  </div>
+</section>
+
+<section class="carousel">
+  <img id="slide" src="/assets/images/img1.jpg" />
+</section>
+
+<script>
+const images = [
+  "/assets/images/img1.png",
+  "/assets/images/img1.png,
+  "/assets/images/img1.png"
+];
+
+let i = 0;
+
+setInterval(() => {
+  i = (i + 1) % images.length;
+  document.getElementById("slide").src = images[i];
+}, 3000);
+</script>
+
+{% endblock %}
